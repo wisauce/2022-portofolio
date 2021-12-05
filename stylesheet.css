@@ -1,204 +1,138 @@
-* {
-  box-sizing: border-box;
+@font-face {
+    font-family: "Anime Ace";
+    src: url(fonts/Laffayette_Comic_Pro.ttf);
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
 
 body {
-  margin: 0;
-  font-family: "Lucida Grande";
+    font-family: "Anime Ace";
+  }
+
+.top-narrative {
+    height: 400px;
+    width: 100%;
+    background-color: black;
 }
 
-a {
-  text-decoration: none;
+
+
+.hi {
+    text-align: center;
+    color: white;
+    padding-top: 50px;
 }
 
-.clear {
-  clear: left;
+.narrative-name {
+    height: 150px;
+    width: 120px;
+    position: absolute;
+    top: 120px;
+    left: 400px;
 }
 
-.container {
-  max-width: 1170px;
-  padding: 0 15px;
-  margin: 0 auto;
+.box {
+    background-color: white;
+    border: 3px solid black;
 }
 
-.top-wrapper {
-  padding: 180px 0 100px 0;
-  background-image: url(https://prog-8.com/images/html/advanced/top_en.png);
-  background-size: cover;
-  color: white;
-  text-align: center;
+.nt {
+    padding: 20px;
+    text-align: center;
+    font-weight: 600;
+    font-size: small;
 }
 
-.top-wrapper h1 {
-  opacity: 0.7;
-  font-size: 45px;
-  letter-spacing: 5px;
-  margin-bottom: 10px;
+.narrative-hobby {
+    height: 180px;
+    width: 120px;
+    position: absolute;
+    left: 800px;
+    top: 200px;
 }
 
-.top-wrapper p {
-  opacity: 0.7;
-  margin-bottom: 3px;
+.fade {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
 }
 
-.btn-wrapper {
-  text-align: center;
-  margin: 20px 0;
+.sma47 {
+    border-bottom: 4px solid black;
+    width: 100%;
+    margin-bottom: 50px;
 }
 
-.btn-wrapper p {
-  margin: 10px 0;
+.narrative-school {
+    height: 75px;
+    width: 150px;
+    position: absolute;
+    left: 1100px;
+    top: 520px;
+    z-index: 20;
 }
 
-.signup {
-  background-color: #239b76;
+.MPK {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.facebook {
-  background-color: #3b5998;
-  margin-right: 10px;
+.parent {
+    width: 1200px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    border: 4px solid black;
 }
 
-.twitter {
-  background-color: #55acee;
+.zoom {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    transition: all 0.5s;
 }
 
-.btn {
-  padding: 12px 24px;
-  color: white;
-  display: inline-block;
-  opacity: 0.8;
-  border-radius: 4px;
-  text-align: center;
+.logo47 {
+    background-image: url(img/logo\ sman\ 47.png);
 }
 
-.btn:hover {
-  opacity: 1;
+.opini47 {
+    background-image: url(img/opini\ 47.png);
 }
 
-.fa {
-  margin-right: 5px;
+.narrative-mpk {
+    height: 150px;
+    width: 120px;
 }
 
-header {
-  height: 65px;
-  width: 100%;
-  background-color: rgba(34, 49, 52, 0.9);
-  position :fixed;
-  top: 0;
-  z-index: 10;
+.narrative-empeka {
+    height: 130px;
+    width: 100px;
+    position:absolute;
+    top:1050px;
+    left: 20px;
 }
 
-.logo {
-  width: 124px;
-  margin-top: 20px;
+.narrative-komisid {
+    height: 150px;
+    width: 130px;
+    position:absolute;
+    top:1300px;
+    right: 20px;
+    z-index: 2;
 }
 
-.header-left {
-  float: left;
+.parent {
+    display: inline-block;
 }
 
-.header-right {
-  float: right;
-  margin-right: -25px;
-}
-
-.header-right a {
-  line-height: 65px;
-  padding: 0 25px;
-  color: white;
-  display: block;
-  float: left;
-  transition: all 0.5s;
-}
-
-.header-right a:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
-.menu-icon{
-  color: white;
-  float: right;
-  font-size: 25px;
-  padding: 21px 0;
-  display: none;
-}
-
-.lesson-wrapper {
-  padding-bottom: 80px;
-  padding-left: 5%;
-  padding-right: 5%;
-  background-color: #f7f7f7;
-  text-align: center;
-}
-
-.heading {
-  padding-top: 80px;
-  padding-bottom: 50px;
-  color: #5f5d60;
-}
-
-.heading h2 {
-  font-weight: normal;
-}
-
-.lesson {
-  float: left;
-  width: 25%;
-}
-
-.lesson-icon {
-  position: relative;
-}
-
-.lesson-icon p {
-  position: absolute;
-  top: 44%;
-  width: 100%;
-  color: white;
-}
-
-.text-contents {
-  width: 80%;
-  display: inline-block;
-  margin-top: 15px;
-  font-size: 15px;
-  color: #b3aeb5;
-}
-
-.heading h3 {
-  font-weight: normal;
-}
-
-.message-wrapper {
-  border-bottom: 1px solid #eee;
-  padding-bottom: 80px;
-  text-align: center;
-}
-
-.message {
-  padding: 15px 40px;
-  background-color: #5dca88;
-  cursor: pointer;
-  box-shadow: 0 7px #1a7940;
-}
-
-.message:active {
-  position: relative;
-  top: 7px;
-  box-shadow: none;
-}
-
-footer img {
-  width: 125px;
-}
-
-footer p {
-  color: #b3aeb5;
-  font-size: 12px;
-}
-
-footer {
-  padding-top: 30px;
-  padding-bottom: 20px;
+.parent:hover .zoom {
+    transform: scale(1.1);
 }
