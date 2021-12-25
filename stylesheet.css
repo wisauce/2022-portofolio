@@ -19,20 +19,18 @@ body {
     background-color: black;
 }
 
-
-
 .hi {
     text-align: center;
     color: white;
-    padding-top: 50px;
+    padding-top: 5vmin;
 }
 
 .narrative-name {
     height: 150px;
     width: 120px;
     position: absolute;
-    top: 120px;
-    left: 400px;
+    top: 20vmin;
+    left: 70vmin;
 }
 
 .box {
@@ -51,8 +49,8 @@ body {
     height: 180px;
     width: 120px;
     position: absolute;
-    left: 800px;
-    top: 200px;
+    right: 70vmin;
+    top: 30vmin;
 }
 
 .fade {
@@ -64,15 +62,15 @@ body {
 .sma47 {
     border-bottom: 4px solid black;
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 40vmin;
 }
 
 .narrative-school {
     height: 75px;
     width: 150px;
     position: absolute;
-    left: 1100px;
-    top: 520px;
+    right: 7vmin;
+    top: 80vmin;
     z-index: 20;
 }
 
@@ -83,13 +81,35 @@ body {
 }
 
 .parent {
-    width: 1200px;
-    height: 300px;
     overflow: hidden;
     position: relative;
     display: inline-block;
     cursor: pointer;
     border: 4px solid black;
+    z-index: 10;
+}
+
+.osisempeka {
+    width: 1200px;
+    height: 300px;
+    margin-bottom: 3vmin;
+}
+
+.opinion {
+    width: 1200px;
+    height: 300px;
+}
+
+.semankka {
+    width: 1200px;
+    height: 300px;
+    margin-top: 3vmin;
+}
+
+.podcast {
+    top: 5vmin;
+    width: 400px;
+    height: 400px;
 }
 
 .zoom {
@@ -107,6 +127,14 @@ body {
     background-image: url(img/opini\ 47.png);
 }
 
+.fostal {
+    background-image: url(img/fostal.jpg);
+}
+
+.semangka {
+    background-image: url(img/semankka.png);
+}
+
 .narrative-mpk {
     height: 150px;
     width: 120px;
@@ -116,23 +144,100 @@ body {
     height: 130px;
     width: 100px;
     position:absolute;
-    top:1050px;
-    left: 20px;
+    top: 170vmin;
+    left: 60vmin;
 }
 
 .narrative-komisid {
     height: 150px;
     width: 130px;
     position:absolute;
-    top:1300px;
-    right: 20px;
+    top: 175vmin;
+    right: 60vmin;
     z-index: 2;
 }
 
-.parent {
+.parent:hover .zoom {
+    transform: scale(1.05);
+}
+
+.spotify {
+    margin-top: 30px;
+    width: 100%;
+    height: 700px;
+    background-image: url(img/spotify\ 2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.narrative-spotify {
+    position: absolute;
+    margin-top: 5vmin;
+    margin-left: 12vmin
+}
+
+.narrative-osismpk47 {
+    position: absolute;
+    margin-top: 5vmin;
+    left: 12vmin;
+    z-index: 20;
+    height: 120px;
+    width: 130px;
+}
+
+.narrative-opiniempattuju {
+    position: absolute;
+    margin-top: 5vmin;
+    right: 12vmin;
+    z-index: 20;
+    height: 110px;
+    width: 130px;
+}
+
+.semanggka {
+    width: 1000px;
+    height: 50px;
+    margin-top: 3vmin;
     display: inline-block;
 }
 
-.parent:hover .zoom {
-    transform: scale(1.1);
+.footer {
+    width: 100%;
+    height: 50px;
+    background-color: black;
 }
+
+.fad {
+    position: absolute;
+    width: 100%;
+    top: 2700px;
+}
+
+.space {
+    height: 195px;
+}
+
+.footer p {
+    color: white;
+    text-align: center;
+    animation-duration: 3s;
+    animation-name: slidein;  
+}
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    75% {
+      font-size: 100%;
+      margin-left: 25%;
+      width: 150%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
