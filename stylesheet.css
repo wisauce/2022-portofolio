@@ -13,6 +13,18 @@ body {
     font-family: "Anime Ace";
   }
 
+/* Untuk Tablet */
+@media all and (max-width: 1000px) {
+
+}
+  
+  /* Untuk Smartphone */
+@media all and (max-width: 670px) {
+    .osisempeka {
+        height: 10vmin;
+    }
+}
+
 .top-narrative {
     height: 400px;
     width: 100%;
@@ -25,32 +37,43 @@ body {
     padding-top: 5vmin;
 }
 
+.narrative-top {
+    display: flex;
+    gap: 25vmin;
+    align-items: center;
+    justify-content: center;
+}
+
+.twobox {
+    display: flex;
+    gap: 15vmin;
+    align-items: center;
+    justify-content: center;
+}
+
 .narrative-name {
     height: 150px;
     width: 120px;
-    position: absolute;
-    top: 20vmin;
-    left: 70vmin;
+    position: relative;
+    display: flexbox;
 }
 
-.box {
-    background-color: white;
-    border: 3px solid black;
+.narrative-hobby {
+    height: 180px;
+    width: 120px;
+    position: relative;
+    display: flexbox;
+    margin-top: 70px;
 }
+
 
 .nt {
     padding: 20px;
     text-align: center;
     font-weight: 600;
     font-size: small;
-}
-
-.narrative-hobby {
-    height: 180px;
-    width: 120px;
-    position: absolute;
-    right: 70vmin;
-    top: 30vmin;
+    background-color: white;
+    border: 3px solid black;
 }
 
 .fade {
@@ -59,18 +82,32 @@ body {
     width: 100%;
 }
 
-.sma47 {
-    border-bottom: 4px solid black;
+.sma47page {
     width: 100%;
-    margin-bottom: 40vmin;
+    height: 0;
+    background-image: url(img/Fade\ +\ SMAN\ 47.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 47.5%;
+    border-bottom: 4px solid black;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.text-container47 {
+    position:absolute; 
+    top:0; 
+    bottom:0; 
+    left:0; 
+    right:0;
 }
 
 .narrative-school {
     height: 75px;
     width: 150px;
-    position: absolute;
-    right: 7vmin;
-    top: 80vmin;
+    float: right;
+    margin-top: 3vmin;
+    margin-right: 3vmin;
     z-index: 20;
 }
 
@@ -90,20 +127,22 @@ body {
 }
 
 .osisempeka {
-    width: 1200px;
-    height: 300px;
+    width: 91.5%;
+    height: 45vmin;
     margin-bottom: 3vmin;
 }
 
 .opinion {
-    width: 1200px;
-    height: 300px;
+    width: 91.5%;
+    height: 45vmin;
+    background-color: #ff1717;
 }
 
 .semankka {
-    width: 1200px;
-    height: 300px;
+    width: 91.5%;
+    height: 45vmin;
     margin-top: 3vmin;
+    background-color: #7d46eb;
 }
 
 .podcast {
@@ -115,16 +154,19 @@ body {
 .zoom {
     height: 100%;
     width: 100%;
-    background-size: cover;
+    background-size:contain;
+    background-repeat: no-repeat;
     transition: all 0.5s;
 }
 
 .logo47 {
     background-image: url(img/logo\ sman\ 47.png);
+    background-position: center;
 }
 
 .opini47 {
     background-image: url(img/opini\ 47.png);
+    background-position: center;
 }
 
 .fostal {
@@ -133,6 +175,7 @@ body {
 
 .semangka {
     background-image: url(img/semankka.png);
+    background-position: center;
 }
 
 .narrative-mpk {
@@ -143,37 +186,21 @@ body {
 .narrative-empeka {
     height: 130px;
     width: 100px;
-    position:absolute;
-    top: 170vmin;
-    left: 60vmin;
+    position: relative;
+    display: flexbox;
+    margin-bottom: 80px;
 }
 
 .narrative-komisid {
     height: 150px;
     width: 130px;
-    position:absolute;
-    top: 175vmin;
-    right: 60vmin;
-    z-index: 2;
+    position: relative;
+    display: flexbox;
+    margin-bottom: 10px;
 }
 
 .parent:hover .zoom {
     transform: scale(1.05);
-}
-
-.spotify {
-    margin-top: 30px;
-    width: 100%;
-    height: 700px;
-    background-image: url(img/spotify\ 2.png);
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.narrative-spotify {
-    position: absolute;
-    margin-top: 5vmin;
-    margin-left: 12vmin
 }
 
 .narrative-osismpk47 {
@@ -195,53 +222,96 @@ body {
 }
 
 .semanggka {
-    width: 1000px;
+    width: 80%;
     height: 50px;
     margin-top: 3vmin;
+    margin-bottom: 6vmin;
     display: inline-block;
 }
 
-.footer {
-    width: 100%;
-    height: 50px;
-    background-color: black;
+ul {
+display: flex;
+flex-wrap: wrap;
+}
+      
+li {
+    height: 40vh;
+    flex-grow: 1;
+}
+      
+img {
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
 }
 
-.fad {
+@media (max-aspect-ratio: 1/1) {
+    li {
+      height: 40vh;
+    }
+  }
+  
+  @media (max-height: 480px) {
+    li {
+      height: 80vh;
+    }
+  }
+  
+  @media (max-aspect-ratio: 1/1) and (max-width: 480px) {
+    ul {
+      flex-direction: row;
+    }
+  
+    li {
+      height: auto;
+      width: 30%;
+    }
+  
+    img {
+      width: 100%;
+      max-height: 8vh;
+      min-width: 0;
+    }
+  }
+
+.photo-gallery {
+    border-top: black 4px solid;
+    border-bottom: black 4px solid;
+    margin-top: 10vmin;
+    position: relative;
+}
+
+.kamera {
+    height: 230px;
+    width: 150px;
     position: absolute;
-    width: 100%;
-    top: 2700px;
+    top: 5%;
+    left: 5%;
 }
 
-.fae {
-    width: 100%;
+.message {
+    padding: 15px 40px;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 0 7px black;
+    border: solid black 2px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.btn {
+    padding: 12px 24px;
+    color: black;
+    display: inline-block;
+    text-align: center;
 }
 
 .space {
-    height: 30px;
-}
-
-.footer p {
+    height: 100px;
+    background-color: black;
     color: white;
     text-align: center;
-    animation-duration: 3s;
-    animation-name: slidein;  
 }
-
-@keyframes slidein {
-    from {
-      margin-left: 100%;
-      width: 300%;
-    }
-  
-    75% {
-      font-size: 100%;
-      margin-left: 25%;
-      width: 150%;
-    }
-  
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
-  }
