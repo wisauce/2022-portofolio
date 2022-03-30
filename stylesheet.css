@@ -1,0 +1,346 @@
+@font-face {
+    font-family: "Anime Ace";
+    src: url(fonts/Laffayette_Comic_Pro.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+body {
+    font-family: "Anime Ace";
+    font-size: 100%;
+  }
+
+.top-narrative {
+    height: 400px;
+    width: 100%;
+    background-color: black;
+}
+
+.hi {
+    text-align: center;
+    color: white;
+    padding-top: 5vmin;
+}
+
+.narrative-top {
+    display: flex;
+    gap: 25vmin;
+    align-items: center;
+    justify-content: center;
+}
+
+.twobox {
+    display: flex;
+    gap: 15vmin;
+    align-items: center;
+    justify-content: center;
+}
+
+.narrative-name {
+    height: 150px;
+    width: 120px;
+    position: relative;
+    display: flexbox;
+}
+
+.narrative-hobby {
+    height: 180px;
+    width: 120px;
+    position: relative;
+    display: flexbox;
+    margin-top: 70px;
+}
+
+
+.nt {
+    padding: 20px;
+    text-align: center;
+    font-weight: 600;
+    font-size: small;
+    background-color: white;
+    border: 3px solid black;
+}
+
+.fade {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+}
+
+.sma47page {
+    width: 100%;
+    height: 0;
+    background-image: url(img/Fade\ +\ SMAN\ 47.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 47.5%;
+    border-bottom: 4px solid black;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.text-container47 {
+    position:absolute; 
+    top:0; 
+    bottom:0; 
+    left:0; 
+    right:0;
+}
+
+.narrative-school {
+    height: 75px;
+    width: 150px;
+    float: right;
+    margin-top: 3vmin;
+    margin-right: 3vmin;
+    z-index: 20;
+}
+
+.MPK {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.parent {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    border: 4px solid black;
+    z-index: 10;
+}
+
+.osisempeka {
+    width: 91.5%;
+    height: 45vmin;
+    margin-bottom: 3vmin;
+}
+
+.opinion {
+    width: 91.5%;
+    height: 45vmin;
+    background-color: #ff1717;
+}
+
+.semankka {
+    width: 91.5%;
+    height: 45vmin;
+    margin-top: 4vmin;
+    background-color: #7d46eb;
+    margin-bottom: 4vmin;
+}
+
+.podcast {
+    top: 5vmin;
+    width: 400px;
+    height: 400px;
+}
+
+.zoom {
+    height: 100%;
+    width: 100%;
+    background-size:contain;
+    background-repeat: no-repeat;
+    transition: all 0.5s;
+}
+
+.logo47 {
+    background-image: url(img/logo\ sman\ 47.png);
+    background-position: center;
+}
+
+.opini47 {
+    background-image: url(img/opini\ 47.png);
+    background-position: center;
+}
+
+.fostal {
+    background-image: url(img/fostal.jpg);
+}
+
+.semangka {
+    background-image: url(img/semankka.png);
+    background-position: center;
+}
+
+.narrative-mpk {
+    height: 150px;
+    width: 120px;
+}
+
+.narrative-empeka {
+    height: 130px;
+    width: 100px;
+    position: relative;
+    display: flexbox;
+    margin-bottom: 80px;
+}
+
+.narrative-komisid {
+    height: 150px;
+    width: 130px;
+    position: relative;
+    display: flexbox;
+    margin-bottom: 10px;
+}
+
+.parent:hover .zoom {
+    transform: scale(1.05);
+}
+
+.narrative-osismpk47 {
+    position: absolute;
+    margin-top: 5vmin;
+    left: 7%;
+    z-index: 20;
+    height: 120px;
+    width: 130px;
+}
+
+.narrative-opiniempattuju {
+    position: absolute;
+    margin-top: 5vmin;
+    right: 7%;
+    z-index: 20;
+    height: 110px;
+    width: 130px;
+}
+
+.semanggka {
+    width: 80%;
+    height: 50px;
+    margin-top: 3vmin;
+    margin-bottom: 6vmin;
+    display: inline-block;
+}
+
+ul {
+display: flex;
+flex-wrap: wrap;
+}
+      
+li {
+    height: 40vh;
+    flex-grow: 1;
+}
+      
+img {
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+
+@media (max-aspect-ratio: 1/1) {
+    li {
+      height: 40vh;
+    }
+  }
+  
+  @media (max-height: 480px) {
+    li {
+      height: 80vh;
+    }
+  }
+  
+  @media (max-aspect-ratio: 1/1) and (max-width: 480px) {
+    ul {
+      flex-direction: row;
+    }
+  
+    li {
+      height: auto;
+      width: 30%;
+    }
+  
+    img {
+      width: 100%;
+      max-height: 8vh;
+      min-width: 0;
+    }
+  }
+
+.photo-gallery {
+    border-top: black 4px solid;
+    border-bottom: black 4px solid;
+    margin-top: 10vmin;
+    position: relative;
+}
+
+.kamera {
+    width: 80%;
+    height: 50px;
+    margin: auto;
+}
+
+.message {
+    padding: 15px 40px;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 0 7px black;
+    border: solid black 2px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.btn {
+    padding: 12px 24px;
+    color: black;
+    display: inline-block;
+    text-align: center;
+}
+
+.space {
+    height: 100px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.space p {
+    padding-top: 5%;
+}
+
+.bottomfade {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Untuk Tablet */
+@media all and (max-width: 1000px) {
+
+}
+  
+  /* Untuk Smartphone */
+@media all and (max-width: 670px) {
+    .osisempeka {
+        height: 30vmin;
+    }
+
+    .opinion {
+        height: 30vmin;
+    }
+
+    .semankka {
+        height: 30vmin;
+    }
+
+    .nt {
+        font-size: 10px;
+    }
+
+    .narrative-osismpk47 {
+        width: 100px;
+    }
+
+    .narrative-opiniempattuju {
+        width: 100px;
+    }
+}
